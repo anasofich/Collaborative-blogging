@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html"
+        ><h1 class="mainHeading">WONDERS OF COPENHAGEN</h1></a
+      >
+      <section class="globalNav">
+        <a class="newpostLink" href="newPost.html">SHARE YOUR EXPERIENCE</a>
+        <a class="latespostsLink" href="index.html">GET INSPIRED</a>
+      </section>
+    </header>
+
+    <main>
+      <section class="singlepostSec">
+        <h2></h2>
+        <article class="postArticle">
+          <section class="dataInfo">
+            <h4>by: <span></span></h4>
+            <p class="date"></p>
+          </section>
+
+          <section class="artPicture"></section>
+
+          <section class="contentSec">
+            <p class="content"></p>
+          </section>
+        </article>
+      </section>
+
+      <section class="commentsSec">
+        <h2>SHARE YOUR THOUGHTS ON THIS POST</h2>
+
+        <form name="commentForm" class="commentForm">
+          <label for="username">name:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            class="dropShadow"
+            required
+          />
+          <label for="content">leave a comment:</label>
+          <textarea
+            name="content"
+            id="content"
+            class="dropShadow"
+            required
+          ></textarea>
+          <input class="submit" type="submit" value="send" />
+        </form>
+
+        <section class="commentsList"></section>
+
+        <template class="commentsTemplate">
+          <article class="singleComment">
+            <div class="titleDate">
+              <h4></h4>
+              <span class="commentDate"></span>
+            </div>
+            <p></p>
+          </article>
+        </template>
+      </section>
+    </main>
+
+    <footer>designed by Ana Sofia Castellanos</footer>
+
+    <script src="article.js"></script>
+  </body>
+</html>

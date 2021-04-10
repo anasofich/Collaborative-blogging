@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHARE YOUR EXPERIENCE</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html"
+        ><h1 class="mainHeading">WONDERS OF COPENHAGEN</h1></a
+      >
+      <section class="globalNav">
+        <a class="newpostLink" href="newPost.html">SHARE YOUR EXPERIENCE</a>
+        <a class="latespostsLink" href="index.html">GET INSPIRED</a>
+      </section>
+    </header>
+
+    <section class="npPicture"></section>
+
+    <div class="newpostTitle">
+      <p class="receivedText hidden dropShadow">
+        Thank you, your message has been received. We will review it shortly.
+      </p>
+      <h2>SHARE YOUR EXPERIENCE</h2>
+      <p class="shareText">
+        We love hearing about everybodie's experiences in Copenhagen and their
+        favorite places and activities. There is always something new to
+        discover and so many hidden gems!
+      </p>
+    </div>
+
+    <div id="form_container">
+      <form name="cphPost">
+        <label for="title">title (max 5 words):</label>
+        <input
+          type="text"
+          id="title"
+          name="title"
+          class="dropShadow"
+          required
+        />
+        <label for="username">username:</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          class="dropShadow"
+          required
+        />
+        <label for="content">tell us about your experience:</label>
+        <textarea
+          name="content"
+          id="content"
+          class="dropShadow"
+          required
+        ></textarea>
+        <input class="submit" type="submit" value="send" />
+      </form>
+    </div>
+
+    <footer>designed by Ana Sofia Castellanos</footer>
+    <script src="newPost.js"></script>
+  </body>
+</html>
